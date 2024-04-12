@@ -1,1 +1,1 @@
-# CSharpProject - Todo list
+# Individual Project - Todo list

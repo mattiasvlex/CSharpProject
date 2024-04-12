@@ -22,7 +22,7 @@ namespace CSharpProject
 
         private string Completed()
         {
-            return (this.IsCompleted) ? "Yes" : "No";
+            return (this.IsCompleted) ? "Completed" : "Pending";
         }
 
         public override string ToString()

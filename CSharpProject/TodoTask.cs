@@ -20,16 +20,19 @@ namespace CSharpProject
             Project = project;
         }
 
+        //Private method for printing something more descriptive than true/false
         private string Completed()
         {
             return (this.IsCompleted) ? "Completed" : "Pending";
         }
 
+        //For easy printing of an object
         public override string ToString()
         {
             return this.Title.PadRight(15) + this.Project.PadRight(15) + this.Date.ToString().PadRight(15) + this.Completed();
         }
 
+        //For printing an object to file
 		public string ToCSV()
 		{
 			return this.Title + "," + this.Project + "," + this.Date.ToString() + "," + this.Completed();
